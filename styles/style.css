@@ -19,6 +19,12 @@
 .display-flex {
     display: flex;
 }
+.orange-color{
+    color: #E95A08;
+}
+.gray-color{
+    color: #00000080;
+}
 
 /* navbar related style */
 .navbar {
@@ -55,8 +61,8 @@
 }
 
 .home {
-    font-weight: 400;
-    font-size: large;
+    font-weight: 700;
+    font-size: 16px;
     text-decoration: none;
     color: black;
 }
@@ -73,11 +79,31 @@
     align-items: center;
     justify-content: center;
 }
+.banner-title{
+    font-size: 65px;
+    font-weight: 700;
+}
+.banner-description{
+    font-size: 22px;
+    font-weight: 400;
+}
+
+/* <!-- Our Plants --> */
 
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
+    .navbar{
+        padding: 10px;
+    }
     .second-content {
         display: none;
+    }
+    .banner{
+        padding: 10px;
+        flex-direction: column-reverse;
+    }
+    .banner-img{
+        max-width: 350px;
     }
 
 }
