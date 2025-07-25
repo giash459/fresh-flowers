@@ -254,6 +254,25 @@
     padding: 11px;
 }
 
+.footer {
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.anchor{
+    margin-bottom: 20px;
+}
+.logo-container{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.logo{
+    margin-right: 20px;
+}
 /* responsive for mobile device */
 @media screen and (max-width: 576px) {
     .navbar {
@@ -324,7 +343,12 @@
     .input-btn {
         width: 80px;
     }
+
     .join-title {
-    padding-top: 100px;
-}
+        padding-top: 100px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
